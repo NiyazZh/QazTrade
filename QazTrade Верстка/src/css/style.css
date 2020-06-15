@@ -1,0 +1,245 @@
+@font-face {
+    font-family: 'Gilroy-Light';           /* название одно */
+    src: url(../fonts/Gilroy-Light.ttf); /* разные файлы */
+    font-weight: normal;              /* разная плотность */
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Gilroy-Medium';           /* название одно */
+    src: url(../fonts/Gilroy-Medium.ttf); /* разные файлы */
+    font-weight: normal;              /* разная плотность */
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Gilroy-Bold';           /* название одно */
+    src: url(../fonts/Gilroy-Bold.ttf); /* разные файлы */
+    font-weight: normal;              /* разная плотность */
+    font-style: normal;
+  }
+/* ------------------------ */
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Gilroy-Medium';
+    margin: 0px;
+    padding: 0px;
+}
+.wrap{
+    max-width: 1290px;
+    width: 95vw;
+    margin: 0px auto;
+}
+#header-lang{
+    background: #177EC7;
+    width: 100%;
+    color: #fff;
+    text-transform: uppercase;
+}
+#header-lang > .wrap{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 43px;
+}
+#header-lang > .wrap > .header-lang__links > a{
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+#header-lang > .wrap > .header-lang__links > a:hover{
+    text-decoration: underline;
+}
+.header-lang__links{
+    display: flex;
+    justify-content: space-between;
+    width: 136px;
+    height: 20px;
+}
+/* --------------- nav --------------- */
+#header-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 123px;
+    border-bottom: 1px solid #DCDCDC;
+}
+.header-nav__links{
+    display: flex;
+    justify-content: space-between;
+    width: 960px;
+}
+.header-nav__links > a{
+    font-size: 16px;
+    color: #646464;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: .1s ease-in-out;
+}
+.header-nav__links > a:hover{
+    color: #1875BC;
+}
+/* ---------- Графики ---------- */
+#main-graphs{
+    height: 200px;
+}
+/* --------- Новости ---------- */
+.title{
+    font-size: 24px;
+    color: #343434;
+    margin-bottom: 29px;
+}
+.main-news__items{
+    display: flex;
+    justify-content: space-between;
+}
+.main-news__container{
+    width:  300px;
+}
+.main-news__text{
+    font-size: 18px;
+    line-height: 27px;
+    margin-top: 34px;
+    margin-bottom: 7px;
+    font-family: 'Gilroy-Light';
+}
+.main-news__date{
+    font-size: 14px;
+    color: #BEA17C;
+}
+.main-news__button__text{
+    text-align: center;
+    font-size: 18px;
+    line-height: 131.5%;
+    color: #177EC7;
+    font-weight: bold;
+}
+.main-news__button{
+    width: 132px;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 54px auto 105px auto;
+    cursor: pointer;
+    font-family: 'Gilroy-Bold';
+}
+
+/* ----------Партнеры--------- */
+#partners{
+    width: 100%;
+    min-height: 262px;
+    background: #f2f3f5;
+    display: flex;
+    align-items: center;
+}
+.partners-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.partners-container{
+    border-left: 1px solid #d6dce8;
+    border-left: 1px solid #d6dce8;
+    width: 329px; 
+    height: 262px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 40px;
+}
+.partners-container__text{
+    width: 244px;
+    margin-top: 21px;
+    margin-bottom: 24px;
+    font-size: 14px;
+    color: #464646;
+}
+.partners-container__website{
+    color: #177EC7;
+    font-size: 14px;
+    font-family: 'Gilroy-Bold';
+}
+/* -------footer-------- */
+footer{
+    background: #1B212B;
+    min-height: 385px;
+    width: 100%;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 64px;
+}
+.footer-container__left{
+    width: 760px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-container__block > .title{
+    color: #E4E4E4;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Gilroy-Medium';
+}
+.footer-container__block > li{
+    list-style-type: none;
+}
+.footer-container__block > li > a{
+    color: #939393;
+    font-size: 14px;
+    line-height: 28px;
+    text-decoration: none;
+}
+.footer-container__mobile{
+    font-size: 24px;
+    line-height: 28px;
+    color: #E4E4E4;
+}
+.footer-container__work{
+    font-size: 12px;
+    line-height: 28px;
+    margin-bottom: 29px;
+    color: #939393;
+}
+.footer-container__email{
+    font-size: 14px;
+    margin-bottom: 54px;
+    color: #FFF;
+}
+.footer-container__right{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+.footer-container__social{
+    width: 95px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 150px;
+}
+/* ----------sub-footer---------- */
+#sub-footer{
+    background: #0C0F11;
+    width: 100%;
+    height: 87px;
+    display: flex;
+    align-items: center;
+}
+.sub-footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sub-footer__text{
+    font-size: 14px;
+    color: #686868;
+}
+.sub-footer__geometry{
+    font-size: 14px;
+    color: #686868;
+}
+
+
