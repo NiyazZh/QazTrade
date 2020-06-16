@@ -48,7 +48,7 @@ body{
     text-decoration: none;
 }
 #header-lang > .wrap > .header-lang__links > a:hover{
-    text-decoration: underline;
+    text-decoration: und;
 }
 .header-lang__links{
     display: flex;
@@ -79,15 +79,86 @@ body{
 .header-nav__links > a:hover{
     color: #1875BC;
 }
+/* ----------- Картинка --------- */
+#main-image{
+    background: url(../img/bg.png) no-repeat center/cover;
+    height: 638px;
+    width: 100%;
+    overflow: hidden;
+}
+.main-image__button{
+    display: flex;
+    color: #4BBCFF;
+    font-size: 18px;
+    font-family: 'Gilroy-Bold';
+}
+.main-image__text{
+    font-size: 36px;
+    color: #FFFFFF;
+    line-height: 131.5%;
+    font-family: 'Gilroy-Bold';
+    max-width: 572px;
+    margin-top: 424px;
+}
+.main-image__button__text{
+    text-decoration: none;
+    color: #4BBCFF;
+    transition: .1s ease-in-out;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
 /* ---------- Графики ---------- */
 #main-graphs{
-    height: 200px;
+    height: 907px;
+    width: 100%;
+    background: linear-gradient(to top, #177ec7 55%, #ffffff 45%);
+    margin-bottom: 109px;
+}
+#main-graphs > .main-graphs-container > .title{
+    margin-top: 105px;
+}
+.main-graphs__tabs{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #DCDCDC;
+    padding-bottom: 21px;
+    margin-top: 63px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.main-graphs__tabs > a {
+    font-size: 18px;
+    color: rgba(125, 125, 125, 0.64);
+    text-decoration: none;
+    transition: .1s ease-in-out;
+}
+.main-graphs__tabs > a:hover{
+    color: #177EC7;
+}
+.main-graphs__tables{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 38px;
+}
+.main-graphs__table{
+    width: 410px;
+    height: 380px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+.sm-table{
+    height: 167px;
+    margin-top: 30px;
 }
 /* --------- Новости ---------- */
 .title{
-    font-size: 24px;
+    font-size: 36px;
     color: #343434;
     margin-bottom: 29px;
+    text-align: center;
 }
 .main-news__items{
     display: flex;
